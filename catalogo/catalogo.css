@@ -371,3 +371,6 @@ footer p{
   margin-top: 80px;
   color: #fff;
 }
+.html {
+  scroll-behavior: smooth;
+}
