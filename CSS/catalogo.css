@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* cabeçalho fixo */
+  .menu {
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    padding: 30px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  #logo {
+    position: absolute;
+    width: 20%;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  /* menu retrail lateral */
+  body {
+    height: 450vh;
+    background-color: #F2AEBB;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow-X: hidden;
+  }
+  
+  #check {
+    display: none;
+  }
+  #icone {
+    cursor: pointer;
+    padding: 32px;
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    left: 20px;
+  }
+  .barra {
+    background-color: #000000;
+    height: 50%;
+    width: 200px;
+    position: relative;
+    transition: all .2s linear;
+    left: -250px;
+  
+  }
+  nav {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    position: absolute;
+    top: 180px;
+  }
+  nav a {
+    text-decoration: none;
+  
+  }
+  .Link {
+    background-color: #8C504A;
+    padding: 40px;
+    font-family: 'Gotham';
+    font-size: 15pt;
+    transition: all .3s linear;
+    color: #ffffff;
+    border-bottom: 1px solid #a3a8ab;
+    opacity: 0;
+  }
+  
+  .Link:hover {
+    background-color: #8cb0bf;
+    color: #ffffff;
+  
+  }
+  
+  #check:checked~.barra {
+    transform: translateX(250px);
+  }
+  
+  #check:checked~.barra nav a .Link {
+    opacity: 1;
+    transition-delay: .3s;
+  }
+  
+  #banner1 {
+    padding-top: 97px;
+    width: 100%;
+  
+  }
+  .mburg {
+    background: #8C504A;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 70px;
+    left: 25px;
+  }
+  
+  .hamburguer {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 3px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+  }
+  
+  .hamburguer:before,
+  .hamburguer:after {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+  }
+  
+  .hamburguer:before {
+    top: -10px;
+  }
+  
+  .hamburguer:after {
+    bottom: -10px;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  input:checked~label .hamburguer {
+    transform: rotate(45deg);
+  }
+  
+  input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+  h1{
+    font-size: 70px;
+    color: #8C504A;
+    text-align: center;
+    margin-left: 80px;
+  }
+  /* fim do menu hamburguer */
+
+section{
+    width: 100%;
+    height: auto;
+}
+.video{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+.video video{
+  width:100%;
+  height: 90vh;
+  border-radius: 30px;
+}
+.banner {
+    width: 100%;
+    height:50vh;
+    margin-top: 150px;
+    display: flex;
+    margin-left: 170px;
+}
+.banner a{
+  width: 70%;
+  height:50vh;
+}
+.banner img {
+  width: 45%;
+  height: 50vh;
+}
+.destaques{
+  width: 100%;
+  height: 80vh;
+  margin-top: 120px;
+  background: #fff;
+
+}
+.destaques h2{
+  font-size: 80px;
+  text-align: center;
+  color: #8C504A;
+}
+.divisao{
+  width: 100%;
+  height:50vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 30vh;
+}
+.img1:hover{
+  cursor: pointer;
+  transition: all 0.3s; 
+  transform: scale(1.8);
+}
+.img2:hover{
+  cursor: pointer;
+  transition: all 0.3s; 
+  transform: scale(1.8);
+}
+.lancamento{
+  width: 100%;
+  height: 125vh;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: #000000;
+}
+.div-1{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+.img-1{
+  width: 450px;
+  height: 450px;
+  margin: auto;
+}
+.div-2{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.img-2{
+  width: 450px;
+  height: 450px;
+  margin: auto;
+}
+.img-1:hover{
+  cursor: pointer;
+  transition: all 0.3s; 
+  transform: scale(1.8);
+}
+.img-2:hover{
+  cursor: pointer;
+  transition: all 0.3s; 
+  transform: scale(1.8);
+}
+.contato{
+  width: 50%;
+  height: 70vh;
+  background: #fbfbfb;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 30px;
+  border: 3px solid #000000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contato h2{
+  width: 80%;
+  font-size: 55px;
+  padding: 40px;
+  padding-bottom: 0;
+  text-align: center;
+  color: #000000;
+}
+.contato p{
+  width:80%;
+  padding: 40px;
+  padding-top: 30px;
+  font-size: 40px; 
+  text-align: center;
+  color: #000000;
+}
+.icone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  background: #25D366;
+  width: fit-content;
+  margin: auto;
+
+}
+.icone img{
+  width: 40px;
+  height: 40px;
+}
+.pagamento{
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  margin-top: 50px;
+ 
+}
+.icones-pagamento{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.icones-pagamento img{
+  width:100px;
+  justify-content: space-around;
+}
+.pagamento p{
+  margin-left: 30px;
+  font-size:30px ;
+}
+footer{
+  width: 100%;
+  height: 30vh;
+  background: #8C504A;
+  margin: auto;
+  text-align: center
+}
+footer h2{
+  font-size:40px ;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.icon-footer {
+  display: flex;
+  gap: 100px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 55px;
+}
+.icon-footer a{
+  width: 60px;
+  filter: invert();
+}
+footer p{
+  margin-top: 80px;
+  color: #fff;
+}
